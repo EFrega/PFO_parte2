@@ -1,0 +1,90 @@
+/* Estilos Generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    background-color: #1d1d1d;
+    color: white;
+    padding: 20px;
+}
+
+#search {
+    padding: 10px;
+    width: 80%;
+    max-width: 400px;
+    margin-top: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+#load-more {
+    padding: 10px 20px;
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#load-more:hover {
+    background-color: #005bb5;
+}
+
+/* Estilos para las Tarjetas */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    padding: 20px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.card h2 {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+.card p {
+    font-size: 1em;
+    margin-top: 10px;
+    color: #555;
+}
+
+/* Estilo para cuando no hay resultados */
+#card-container p {
+    font-size: 1.2em;
+    color: #888;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Estilo para el texto de "Cargando..." en el botón */
+#load-more:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
